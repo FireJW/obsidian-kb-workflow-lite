@@ -1,0 +1,19 @@
+{
+  "name": "obsidian-kb-workflow-lite",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "Public-safe preview workflow primitives for Obsidian-style knowledge bases.",
+  "scripts": {
+    "demo": "node scripts/demo.mjs",
+    "test": "node --test"
+  },
+  "keywords": [
+    "obsidian",
+    "knowledge-base",
+    "markdown",
+    "wikilinks",
+    "preview-workflow"
+  ],
+  "license": "MIT"
+}
