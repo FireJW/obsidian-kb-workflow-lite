@@ -4,6 +4,9 @@ Public-safe preview workflow primitives for Obsidian-style Markdown knowledge ba
 
 This repository is a clean extraction inspired by a larger private knowledge-base automation system. It does not include live vault paths, personal notes, provider credentials, browser profiles, machine-local configuration, or write-to-vault operations. It only demonstrates the small reusable core: frontmatter parsing, wikilink extraction, lexical search, and preview manifest generation against synthetic fixture notes.
 
+- Portfolio homepage: <https://firejw.github.io/obsidian-kb-workflow-lite/>
+- Security notes: [docs/security-and-privacy.md](docs/security-and-privacy.md)
+
 ## What It Demonstrates
 
 - YAML-like frontmatter parsing for simple Markdown notes.
@@ -45,16 +48,16 @@ The demo reads only `fixtures/notes/` and prints JSON to stdout.
 
 ```text
 obsidian-kb-workflow-lite/
-├── src/
-│   ├── frontmatter.mjs   # Small frontmatter parser
-│   ├── wikilinks.mjs     # Wikilink and backlink helpers
-│   ├── notes.mjs         # Fixture note loader
-│   ├── search.mjs        # Lexical search scorer
-│   └── preview.mjs       # Preview manifest builder
-├── scripts/demo.mjs      # Local demo command
-├── fixtures/notes/       # Synthetic notes only
-├── tests/                # Node test runner coverage
-└── docs/                 # GitHub Pages portfolio docs
+|-- src/
+|   |-- frontmatter.mjs   # Small frontmatter parser
+|   |-- wikilinks.mjs     # Wikilink and backlink helpers
+|   |-- notes.mjs         # Fixture note loader
+|   |-- search.mjs        # Lexical search scorer
+|   `-- preview.mjs       # Preview manifest builder
+|-- scripts/demo.mjs      # Local demo command
+|-- fixtures/notes/       # Synthetic notes only
+|-- tests/                # Node test runner coverage
+`-- docs/                 # GitHub Pages portfolio docs
 ```
 
 ## Safety Boundary
